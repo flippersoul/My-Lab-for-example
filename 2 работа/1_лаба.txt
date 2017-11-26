@@ -1,0 +1,377 @@
+String to byte 
+-
+C использованием конструктора
+-
+try {
+        Byte b1 = new Byte("10");
+        System.out.println(b1);
+    } catch (NumberFormatException e) {
+        System.err.println("Неверный формат строки!");
+    }
+-
+10
+-
+С использованием метода valueOf класса Byte
+-
+   String str1 = "111";
+    try {
+        Byte b2 = Byte.valueOf(str1);
+        System.out.println(b2);
+    } catch (NumberFormatException e) {
+        System.err.println("Неверный формат строки!");
+    }
+-
+111
+-
+С использованием метода parseByte класса Byte
+-
+   byte b = 0;
+    String str2 = "100";
+    try {
+        b = Byte.parseByte(str2);
+        System.out.println(b);
+    } catch (NumberFormatException e) {
+        System.err.println("Неверный формат строки!");
+    }
+-
+111
+-
+Перевод строки в массив байтов и обратно из массива байтов в строку
+-
+ String str3 = "20150";
+    byte[] b3 = str3.getBytes();
+    System.out.println(b3);
+    
+    //массив байтов переводим обратно в строку 
+    try {
+	  String s = new String(b3, "cp1251");
+	  System.out.println(s);
+	} catch (UnsupportedEncodingException e) {
+	  e.printStackTrace();
+	}
+-
+20150cp1251
+-
+String to short
+-
+C использованием конструктора
+-
+try { 
+        Short s1 = new Short("68");
+        System.out.println(s1);
+    }catch (NumberFormatException e) {  
+        System.err.println("Неверный формат строки!");  
+    }   
+-
+68
+-
+C использованием метода valueOf класса Short
+-
+    String str1 = "59";
+    try { 
+        Short s2 = Short.valueOf(str1);
+        System.out.println(s2);    
+    }catch (NumberFormatException e) {  
+        System.err.println("Неверный формат строки!");  
+    }  
+-
+59
+-
+C использованием метода parseShort класса Short
+-
+   short s3 = 0;  
+    String str2 = "100";  
+    try {  
+        s3 = Short.parseShort(str2);  
+        System.out.println(s3);  
+    } catch (NumberFormatException e) {  
+        System.err.println("Неверный формат строки!");  
+    }    
+-
+100
+-
+String to int
+-
+C использованием конструктора
+-
+  try { 
+        Integer i1 = new Integer("20349");
+        System.out.println(i1);
+    }catch (NumberFormatException e) {  
+        System.err.println("Неверный формат строки!");  
+    }   
+-
+20349
+-
+C использованием метода valueOf класса Integer
+-
+    String str1 = "1451";
+    try {
+        Integer i2 = Integer.valueOf(str1);
+        System.out.println(i2);    
+    }catch (NumberFormatException e) {  
+        System.err.println("Неверный формат строки!");  
+    }  
+-
+1451
+-
+C использованием метода parseInt класса Integer
+-
+  int i3 = 0;
+    String str2 = "102944";
+    try {
+        i3 = Integer.parseInt(str2);
+        System.out.println(i3);  
+    } catch (NumberFormatException e) {  
+        System.err.println("Неверный формат строки!");  
+    }      
+-
+102944
+-
+String  to long
+-
+C использованием конструктора
+-
+  try {
+        Long l1 = new Long("11111111");
+        System.out.println(l1);
+    } catch (NumberFormatException e) {
+        System.err.println("Неверный формат строки!");
+    }
+-
+11111111
+-
+C использованием метода valueOf класса Long
+-
+  String str1 = "222222222";
+    try {
+        Long l2 = Long.valueOf(str1);
+        System.out.println(l2);
+    } catch (NumberFormatException e) {
+        System.err.println("Неверный формат строки!");
+    }
+-
+222222222
+-
+C использованием метода parseLong класса Long
+-
+long l3 = 0;
+    String str2 = "333333333";
+    try {
+        l3 = Long.parseLong(str2);
+        System.out.println(l3);
+    } catch (NumberFormatException e) {
+        System.err.println("Неверный формат строки!");
+    }      
+-
+333333333
+-
+String to float
+-
+С использованием конструктора
+-
+  try {
+        Float f1 = new Float("123.5");
+        System.out.println(f1);
+    } catch (NumberFormatException e) {
+        System.err.println("Неверный формат строки!");
+    }
+-
+123.5
+-
+C использованием метода valueOf класса Float
+-
+   String str1 = "3.1415";
+    try {
+        Float f2 = Float.valueOf(str1);
+        System.out.println(f2);
+    } catch (NumberFormatException e) {
+        System.err.println("Неверный формат строки!");
+    }
+-
+3.1415
+-
+C использованием метода parseFloat класса Float
+-
+  float f3 = 0;
+    String str2 = "36.6";
+    try {
+        f3 = Float.parseFloat(str2);
+        System.out.println(f3);
+    } catch (NumberFormatException e) {
+        System.err.println("Неверный формат строки!");
+    }     
+-
+36.6
+-
+String to double
+-
+С использованием конструктора
+-
+ try {
+        Double d1 = new Double("4.4e10");
+        System.out.println(d1);
+    } catch (NumberFormatException e) {
+        System.err.println("Неверный формат строки!");
+    }
+-
+4.4E10
+-
+C использованием метода valueOf класса Double
+-
+String str1 = "564.6e10";
+    try {
+        Double d2 = Double.valueOf(str1);
+        System.out.println(d2);
+    } catch (NumberFormatException e) {
+        System.err.println("Неверный формат строки!");
+    }
+-
+564.6E10
+-
+C использованием метода parseDouble класса Double
+-
+  double d3 = 0;
+    String str2 = "13.7e10";
+    try {
+        d3 = Double.parseDouble(str2);
+        System.out.println(d3);
+    } catch (NumberFormatException e) {
+        System.err.println("Неверный формат строки!");
+    }            
+-
+13.7E10
+-
+String to boolean
+-
+ String s1 = "True";
+    String s2 = "yes";
+    boolean bool1, bool2, boolean1, boolean2;
+
+    //с использованием метода parseBoolean
+    bool1 = Boolean.parseBoolean(s1);
+    bool2 = Boolean.parseBoolean(s2);
+    System.out.println( bool1 );
+    System.out.println( bool2 );
+
+    //c использованием метода valueOf
+    boolean1 = Boolean.valueOf(s1);
+    boolean2 = Boolean.valueOf(s2);
+    System.out.println( boolean1 );
+    System.out.println( boolean2 );
+-
+true
+false
+true
+false
+-
+Java преобразование числа в строку (NUMBER to STRING)
+-
+int to String
+-
+ int i = 35;
+   String str = Integer.toString(i);
+   System.out.println(str);   
+-
+35
+-
+double to String
+-
+  double  i = 32.4e10;
+   String str = Double.toString(i);
+   System.out.println(str);  
+-
+32.4E10
+-
+long to String
+-
+ long  i = 3422222;
+   String str = Long.toString(i);
+   System.out.println(str);  
+-
+3422222
+-
+float to String
+-
+ float  i = 3.46f;
+   String str = Float.toString(i);
+   System.out.println(str)
+-
+3.46
+-
+Преобразования символа char
+-
+char to String
+-
+  char ch = 'S';
+
+    // c использованием класса Character
+    String charToString = Character.toString(ch);
+    System.out.println(charToString);
+
+    // с использованием операции добавления класса String
+    String str = "" + ch;
+    System.out.println(str);
+
+    //с использованием массива
+    String fromChar = new String(new char[] { ch });
+    System.out.println(fromChar);
+
+    // с использованием метода valueOf класса String 
+    String valueOfchar = String.valueOf(ch);
+    System.out.println(valueOfchar);  
+-
+S
+S
+S
+S
+-
+char to int
+-
+char ch = '9';
+
+    // c использованием метода getNumericValue
+    // класса Character
+    int i1 = Character.getNumericValue(ch);
+    System.out.println(i1); 
+
+    // c использованием метода digit класса Character
+    int i2 = Character.digit(ch,10); 
+    System.out.println(i2); 
+-
+9
+9
+-
+Преобразования чисел
+-
+int to long
+-
+ int i = 2015;
+    long l = (long) (i);
+    System.out.println(l);
+-
+2015
+-
+int to float
+-
+ int i = 2015;
+    float f = (float) (i);
+    System.out.println(f);
+-
+2015.0
+-
+long to int
+-
+long l = 214748364;
+    int i = (int) l;
+    System.out.println(i);
+-
+214748364
+-
+double to int
+-
+double d = 3.14;
+    int i = (int) d;
+    System.out.println(i);
+-
+3
