@@ -1,3 +1,22 @@
+a{
+    text-decoration: none;
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 76px;
+    font-size: 50pt;
+    color: black;
+}
+#btn{
+    display: inline-block;
+    height: 150px;
+    width: 300px;
+    position: absolute;
+    padding:0;
+    background-color: white;
+    margin-top: 224px;
+    margin-left: 1054px;
+}
+
 body{
 	background-color: black;
 }
