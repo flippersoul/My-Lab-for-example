@@ -1,41 +1,123 @@
+
+.opasi:hover{
+    opacity: 1.0;
+}
+.opasi{
+    opacity: 0.8;
+}
+.opas:hover{
+    opacity: 1.0;
+}
+.opas{
+    opacity: 0.5;
+}
+#play{
+    position: absolute;
+    top: 39px;
+    right: 600px; 
+}
+#app{
+    position: absolute;
+    top: 30px;
+    right: 400px; 
+}
+#inst{
+    position: absolute;
+    top: 30px;
+    left: 600px;
+}
+#vk{
+    position: absolute;
+    top: 30px;
+    left: 400px;
+}
+.ico{
+    display: inline-block;
+    height: 108px;
+    width: 108px;
+}
+#gallery p{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 47pt;
+    padding-top: 39px;
+}
+#gallery{
+    display: inline-block;
+    width: 500px;
+    height: 300px;
+    background-color: #ffad00;
+    position: absolute;
+    right: 250px;
+    top: 679px;
+}
+#registration p{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50pt;
+    padding-top: 39px;
+}
+#registration{
+    display: inline-block;
+    width: 500px;
+    height: 300px;
+    background-color: #ffad00;
+    position: absolute;
+    left: 250px;
+    top: 679px;
+}
+#rules p{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 42pt;
+    padding-top: 25px;
+}
+#rules{
+    display: inline-block;
+    width: 500px;
+    height: 300px;
+    background-color: #ffad00;
+    position: absolute;
+    left: 250px;
+    top: 300px;
+}
 a{
     text-decoration: none;
-    position: absolute;
-    margin-top: 35px;
-    margin-left: 76px;
-    font-size: 50pt;
     color: black;
 }
-#btn{
-    display: inline-block;
-    height: 150px;
-    width: 300px;
-    position: absolute;
-    padding:0;
-    background-color: white;
-    margin-top: 224px;
-    margin-left: 1054px;
-}
+#price p{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 60pt;
+    padding-top: 25px;
 
-body{
-	background-color: black;
 }
-.object {
-	margin-left: 807px;
+#price{
+    display: inline-block;
+    width: 500px;
+    height: 300px;
+    background-color: #ffad00;
     position: absolute;
-    transition: all 2s ease-in-out;
-    -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
-    -moz-transition: all 2s ease-in-out; /** Firefox **/
-    -o-transition: all 2s ease-in-out; /** Opera **/
+    right: 250px;
+    top: 300px;
+
+}
+body{
+    background-image: url(img/back.png);
+   
+}
+.center{
+    text-align: center;
+}
+#text_right_logo{
+    display: block;
+    font-size: 23pt;
+    color: #ffad00;
+    text-transform: uppercase;
+
 }
 #logo{
-	position: absolute;
-	margin:0;
-    margin-left: 800px;
-}
-#axis:hover .move-right{
-    transform: translate(230px,0);
-    -webkit-transform: translate(230px,0); /** Chrome & Safari **/
-    -o-transform: translate(270px,0); /** Opera **/
-    -moz-transform: translate(270px,0); /** Firefox **/
+    display: block;
+    margin:0;
+    
 }
